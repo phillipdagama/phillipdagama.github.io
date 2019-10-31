@@ -1,3 +1,5 @@
+* { box-sizing: border-box;}
+
 h1,img {font-family: 'Indie Flower', cursive; text-align: center;}
 p {font-family: 'Teko', sans-serif;}
 
@@ -5,11 +7,14 @@ img {
     float: left;
     border: 1px solid black;
     margin-right: 15px;
+    
 }
 
 main {max-width: 20px;}
-
-.name {
-    font-weight: bold;
-    color:#be5e00
+#mywrap {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcyan;
 }
