@@ -1,7 +1,9 @@
 * { box-sizing: border-box;}
 
-h1,img {font-family: 'Indie Flower', cursive; text-align: center;}
-p {font-family: 'Teko', sans-serif;}
+h1,img {font-family: 'Noto Sans SC', sans-serif; text-align: center;}
+h2 {font-family: 'Lobster', cursive; text-align: center;}
+h3 {font-family: 'Roboto', sans-serif; text-align: center;}
+nav li {font-family: 'Noto Sans SC', sans-serif;}
 
 img {
     float: left;
@@ -11,10 +13,85 @@ img {
 }
 
 main {max-width: 20px;}
-#mywrap {
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+.mywrap {
     display: flex;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: lightcyan;
+    background-color: white;
+}
+
+.mygrid {
+    display: grid;
+    grid-template-columns: 175px 1fr 1fr 1fr 175px ;
+    grid-template-rows: 1fr 30% 80%;
+    background-color: whitesmoke;
+}
+
+.banner {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    background-color: whitesmoke;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.header {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    background-color: navy;
+    border: 1px solid black;
+}
+
+.home {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.social {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.about {
+    grid-column: 4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+.body {
+    grid-column: 1/6;
+    grid-row: 3;
+    background-color: white;
 }
