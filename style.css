@@ -2,17 +2,14 @@
 
 h1,img {font-family: 'Noto Sans SC', sans-serif; text-align: center;}
 h2 {font-family: 'Lobster', cursive; text-align: center;}
-h3 {font-family: 'Roboto', sans-serif; text-align: center;}
+h3 {font-family: 'Roboto Slab', serif; text-align: center;}
 nav li {font-family: 'Noto Sans SC', sans-serif;}
 
 img {
     float: left;
-    border: 1px solid black;
     margin-right: 15px;
-    
 }
 
-main {max-width: 20px;}
 
 .body {
     margin: 0;
@@ -29,7 +26,7 @@ main {max-width: 20px;}
 .mygrid {
     display: grid;
     grid-template-columns: 175px 1fr 1fr 1fr 175px ;
-    grid-template-rows: 1fr 30% 80%;
+    grid-template-rows: 15% 10% 75%;
     background-color: whitesmoke;
 }
 
@@ -93,5 +90,7 @@ main {max-width: 20px;}
 .body {
     grid-column: 1/6;
     grid-row: 3;
+    
+    font-size: 2vw;
     background-color: white;
 }
